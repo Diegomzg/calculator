@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-grid">
+        <form class="calcul">
+            <div class="output">
+                <div data-previous class="previous-operand"></div>
+                <div data-current class="current-operand"></div>
+            </div>
+            <button type="button" data-all-clear class="span-two">AC</button>
+            <button type="button" data-delete>DEL</button>
+            <button type="button" data-operation>÷</button>
+            <button type="button" data-number class="num">1</button>
+            <button type="button" data-number class="num">2</button>
+            <button type="button" data-number class="num">3</button>
+            <button type="button" data-operation>*</button>
+            <button type="button" data-number class="num">4</button>
+            <button type="button" data-number class="num">5</button>
+            <button type="button" data-number class="num">6</button>
+            <button type="button" data-operation>+</button>
+            <button type="button" data-number class="num">7</button>
+            <button type="button" data-number class="num">8</button>
+            <button type="button" data-number class="num">9</button>
+            <button type="button" data-operation>-</button>
+            <button type="button" data-number class="num">.</button>
+            <button type="button" data-number class="num">0</button>
+            <button type="button" class="span-two equal" data-equal>=</button>
+        </form>
+    </div>
+    <div class="your-element"></div>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".calculator-grid"), {
+		max: 5,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+	});
+</script>
+
+</body>
+
+</html>
